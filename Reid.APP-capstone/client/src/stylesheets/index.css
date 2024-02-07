@@ -1,0 +1,29 @@
+@import './reset.css'; 
+
+
+@import '../views/partialViews/navbar/navbar.css'; 
+@import '../views/partialViews/navbar/navlinks/navlinks.css'; 
+@import '../views/partialViews/navbar/hamburger/hamburger.css';
+@import '../views/partialViews/footer/footer.css'; 
+@import '../views/partialViews/logo/logo.css'; 
+ 
+@import '../views/fullPages/background/background.css'; 
+@import '../views/fullPages/home/home.css'; 
+@import '../views/fullPages/home/aside/aside.css'; 
+@import '../views/fullPages/home/content/content.css'; 
+@import '../views/fullPages/home/userlanding/userlanding.css'; 
+@import '../views/fullPages/profile/profile.css'; 
+@import '../views/fullPages/adminLanding/adminlanding.css'; 
+
+
+@import '../views/modals/logister/logister.css'; 
+@import '../views/modals/admin/admin.css'; 
+@import '../views/modals/Easter/phone.css'; 
+@import '../views/modals/delete/delete.css'; 
+
+
+@import '../components/formComponents/input.css'; 
+/* 
+@import '../views'; 
+@import '../views'; 
+*/

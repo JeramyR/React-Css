@@ -1,0 +1,16 @@
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(4, 58, 60, .8);
+    color: #66AF31;
+    font-weight: 800;
+    padding-right: 0px;
+    padding-left: 3px;
+    transform-style: preserve-3d;
+    transition: 2s;
+}

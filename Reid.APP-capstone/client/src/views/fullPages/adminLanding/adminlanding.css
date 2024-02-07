@@ -1,0 +1,68 @@
+.admin-land {
+    color: rgb(218, 218, 218);
+    width: 100%;
+
+}
+.admin-h3 {
+    text-align: center;
+    margin-top: 5px;
+}
+.admin-card-container {
+
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+
+}
+.admin-card {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 10px;
+    background-color: rgba(0, 206, 209, 0.755);
+    border-radius: 10px;
+    box-shadow: 
+        0px 0px 10px 10px rgba(0, 0, 0, 0.549);
+}
+.info-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+}
+.user-name, .user-email, .user-since {
+    margin: 2px;
+}
+
+.admin-button-container {
+    border-radius: 20px;
+    overflow: hidden;
+    border: dimgrey outset 4px;
+}
+
+.admin-buttons {
+    outline: none;
+    border: none;
+    padding: 4px;
+    margin: 0px;
+    background-color: rgb(30, 255, 251);
+}
+.admin-buttons:hover {
+    color: gainsboro;
+    background-color: rgba(0, 79, 85, 0.535);
+}
+.admin-buttons:active {
+    color: rgb(30, 255, 251);
+    background-color: rgb(0, 0, 0)                                                                                            ;
+}
+@media screen and (max-width: 400px) {
+    .admin-land {
+        overflow-y: auto;
+    }
+    
+}

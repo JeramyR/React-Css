@@ -1,0 +1,211 @@
+.profile-underlay {
+    overflow-y: scroll;
+}
+.profile-underlay::-webkit-scrollbar {
+    appearance: none;
+    width: 5px;
+}
+
+.profile-underlay::-webkit-scrollbar-track-piece {
+    background-color: rgb(0, 77, 63);
+}
+.profile-underlay::-webkit-scrollbar-thumb {
+    background-image: 
+    linear-gradient(
+        rgb(0, 0, 0) 20%, 
+        rgb(3, 255, 175) 50%, 
+        rgb(0, 0, 0) 80%);
+    border-radius: 50%;
+}
+.profile-title {
+    text-align: center;
+    text-shadow: 
+        1px 1px 2px   rgb(0, 0, 0),
+        0 0 20px rgb(0, 0, 0), 
+        0 0 5px rgb(0, 0, 0);
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: cornsilk;
+    
+}
+.profile-information {
+    background-color: rgba(0, 0, 0, 0.148);
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-shadow: 
+        1px 1px 2px   rgb(0, 0, 0),
+        0 0 20px rgb(0, 0, 0), 
+        0 0 5px rgb(0, 0, 0);
+    color: cornsilk;
+    border-radius: 10px;
+    box-shadow: 
+    0 0 .25em 2px rgb(0, 0, 0);
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 25px 0;
+    
+
+}
+.form-container {
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: cornsilk;
+    height: 100%;
+    box-shadow: 
+        0 0 1.5em 20px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.profile-btn-div {
+    width: 100%;   
+}
+.profile-btn {
+    width: 100%;
+    padding: 4px;
+    border-radius: 5px 5px 0 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: 
+        linear-gradient(
+           rgba(4, 255, 255, 0.9) 70%, 
+           rgba(0, 0, 0, 0.9)
+           );
+    box-shadow: 
+        0 0 1.5em 5px black;
+
+    transition-duration: 1s;
+}
+.profile-btn:hover {
+    color: floralwhite;
+    background-color: transparent;
+    background-image: 
+        linear-gradient(
+            rgba(0, 121, 121, 0.5) 70%,
+            rgba(0, 0, 0, .5)
+            );
+}
+.profile-btn:active {
+    background-color: rgba(0, 139, 139, 0.9);
+    color: black;
+    transition-duration: 0s;
+}
+
+
+
+.profile-label {
+    text-shadow: 
+        1px 1px 2px   rgb(0, 0, 0),
+        0 0 20px rgb(0, 0, 0), 
+        0 0 5px rgb(0, 0, 0);
+     color: rgb(0, 255, 238);
+     font-weight: 800;
+
+}
+.profile-label-input-div {
+    display: flex;
+    align-items: center;
+}
+.profile-input {
+    padding: 4px;
+    margin-left: 10px;
+    background-color: rgba(105, 105, 105, 0.235);
+    color: cornsilk;
+}
+.profile-input::placeholder {
+    color: floralwhite;
+}
+.profile-delete {
+    width: 100%;
+    padding: 4px;
+    border-radius: 0 0 5px 5px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.9),
+            rgba(4, 255, 255, 0.9) 25%
+            );
+    box-shadow: 
+        0 0 1.5em 5px black;
+    transition-duration: 1s;
+}
+.profile-delete:hover {
+    color: floralwhite;
+    background-color: transparent;
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, .5),
+            rgba(0, 121, 121, 0.5) 25%
+            );
+}
+.profile-delete:active {
+    background-color: rgba(0, 139, 139, 0.9);
+    color: black;
+    transition-duration: 0s;
+}
+
+
+.profile-criteria {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+        box-shadow: 
+    0 0 .25em 2px rgb(0, 0, 0);
+    flex-direction: column;
+}
+.criteria-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.light-up {
+    color: rgb(0, 255, 238);
+    text-shadow: 
+        1px 1px 2px   rgb(0, 0, 0),
+        0 0 20px rgb(0, 0, 0), 
+        0 0 5px rgb(0, 0, 0);
+}
+.p-message {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 255, 238);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 
+    0 0 .25em 2px rgba(255, 255, 255, 0.491);
+    text-shadow: 
+        1px 1px 2px   rgb(0, 0, 0),
+        0 0 20px rgb(0, 0, 0), 
+        0 0 5px rgb(0, 0, 0);
+}
+@media screen and (min-width:401px) {
+    .profile-label-input-div {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 400px)  {
+
+    .form-container {
+        width: 90%;
+    }
+    .profile-label-input-div {
+        display: flex;
+        flex-direction: column;
+    }
+}

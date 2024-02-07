@@ -1,0 +1,7 @@
+.nav-base-layer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(4, 58, 60);
+    overflow-x: hidden;
+    position: relative;
+}

@@ -1,0 +1,7 @@
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus {
+    -webkit-box-shadow: 
+         0 0 0 1000px hsla(0, 0%, 0%, 0.79) inset !important;
+    -webkit-text-fill-color: cornsilk;
+}

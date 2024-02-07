@@ -1,0 +1,100 @@
+.scene{
+    width: 5em;
+
+    transition: all 2s ease-out;
+    margin-right: -10px;
+    height: 1.5em;
+    perspective: 10em;
+    cursor: pointer;
+}
+
+
+.cube{
+    width:100%;
+    height:100%;
+    position:relative;
+    transform-style:preserve-3d;
+
+
+
+    animation: spinning 10s infinite linear reverse;
+}
+
+.face {
+    transform-style: preserve-3d;
+    position: absolute;
+    width:50%;
+    background-image: 
+        linear-gradient(
+            rgba(0, 255, 238, 0.2) 5%, 
+            rgba(0, 0, 0, 0.5) 35%, 
+            rgba(0, 255, 238, 0.2) 95%);
+    text-shadow: 
+        1px 1px 2px   rgb(0, 0, 0),
+        0 0 20px rgb(0, 0, 0), 
+        0 0 5px rgb(0, 0, 0);
+    color:inherit;
+    text-align:center;
+    border-radius: 50%;
+    
+
+
+    box-shadow: 
+        0 0 .25em 2px rgba(255, 255, 255, 0.2);
+    font-size: larger;
+}
+
+
+.front {
+    transform:rotateY(0deg)translateZ(4em);
+    transform-style: preserve-3d;
+
+    transition: all 2s ease-out;
+    right: 0%;
+}
+.right {
+    transform:rotateY(90deg)translateZ(4em);
+    transform-style: preserve-3d;
+
+    transition: all 2s ease-out;
+    right: 0%;
+}
+.left {
+    transform:rotateY(-90deg)translateZ(4em);
+    transform-style: preserve-3d;
+
+    transition: all 2s ease-out;
+    right: 0%;
+}
+.back {
+    transform:rotateY(180deg)translateZ(4em);
+    transform-style: preserve-3d;
+
+    transition: all 2s ease-out;
+    right: 0%;
+}
+
+
+
+
+
+.persevere {
+    height: 30px;
+}
+.background {
+    width: 95% !important;
+}
+@keyframes spinning {
+    from {
+        transform:translateZ(-5em)rotateY(0deg);
+    }
+    to {
+        transform:translateZ(-5em)rotateY(360deg);
+    }
+}
+@media screen and (max-width: 400px) {
+    .persevere {
+        height: 20px;
+    }
+    
+}

@@ -1,0 +1,92 @@
+.drop-menu {
+    position: relative;
+    display: none;
+    top: 0;
+    height: 0px;
+    width: 100%;
+    background-color: rgb(2, 58, 55);
+    transition: .5s !important;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    z-index: -3;
+    
+}
+.background-image {
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+   
+} 
+.hamburger-tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.background-tabs {
+    padding: 3px;
+    margin-left: 3px;
+    color: rgb(10, 255, 116);
+    text-decoration: none;
+    transform-style: preserve-3d;
+      
+    position: relative;
+    transition-duration: 0.5s;
+    overflow: hidden;
+}
+.background-tabs:after {
+    content: '';
+    background: rgba(0, 0, 0, 0.279);
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all 1s ease-out;
+    padding-left: 350%;
+    padding-bottom: 300%;
+    margin-left: -120px !important;
+    margin-top: -120%;
+
+}
+.background-tabs:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+
+
+.background-tabs:hover {
+    background-color: rgba(105, 105, 105, 0.53);
+}
+.active {
+    background-color: dimgrey;
+    transform-style: preserve-3d;
+    transform: transition .8s;
+}
+.hamburger-logout {
+    width: 100%;
+    padding: 3px;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 3px;
+    font-size: 16px;
+}
+.hamburger-logout:hover {
+    background-color: rgba(105, 105, 105, 0.503);
+}
+@media screen and (max-width: 400px) {
+    .drop-menu {
+        display: flex;
+    }
+}
